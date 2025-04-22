@@ -13,7 +13,7 @@ def solve_quadratic(a, b, c):
     # Calcul du discriminant
     discriminant = b**2 - 4*a*c
 
-    if discriminant > 0:
+    if discriminant >= 0:
         # Deux solutions réelles
         root1 = (-b + math.sqrt(discriminant)) / (2 * a)
         root2 = (-b - math.sqrt(discriminant)) / (2 * a)
@@ -24,7 +24,7 @@ def solve_quadratic(a, b, c):
         return root,
     else:
         # Pas de solution réelle
-        return "Pas de solution réelle"
+        return "Pas de solution réel"
 
 # Exemple d'utilisation
 a = float(input("Entrez la valeur de a : "))
